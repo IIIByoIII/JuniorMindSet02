@@ -18,6 +18,12 @@ namespace Debt
       Assert.AreEqual(175, RentAndDebt(100, 15));
     }
 
+    [TestMethod]
+    public void PaidUpToFourtyDays()
+    {
+      Assert.AreEqual(450, RentAndDebt(100, 35));
+    }
+
     decimal RentAndDebt (decimal rentValue, uint daysLate)
     {
       decimal totalToPay = 0;
@@ -28,6 +34,10 @@ namespace Debt
       else if (daysLate < 31)
       {
         totalToPay = rentValue + daysLate * (rentValue * 0.05m);
+      }
+      else if (daysLate < 41)
+      {
+        totalToPay = rentValue + daysLate * (rentValue * 0.1m);
       }
       return totalToPay;
     }
