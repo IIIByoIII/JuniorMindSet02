@@ -60,17 +60,41 @@ namespace AdvancedRomanNumerals
         Assert.AreEqual("XCIX", ConvertToRomanNumerals(99));
     }
 
+    [TestMethod]
+    public void GetRomanNumeralThreeHundredNinetyNine()
+    {
+        Assert.AreEqual("CCCXCIX", ConvertToRomanNumerals(399));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralFourHundredNinetyNine()
+    {
+        Assert.AreEqual("CDXCIX", ConvertToRomanNumerals(499));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralEightHundredNinetyNine()
+    {
+        Assert.AreEqual("DCCCXCIX", ConvertToRomanNumerals(899));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralNineHundredNinetyNine()
+    {
+        Assert.AreEqual("CMXCIX", ConvertToRomanNumerals(999));
+    }
+
     string ConvertToRomanNumerals (int numberToConvert)
     {
-      string[] numeralCharacters = {"I", "V", "X", "L", "C"};
-      int[] numeralValues = {1, 5, 10, 50, 100};
+      string[] numeralCharacters = {"I", "V", "X", "L", "C", "D", "M"};
+      int[] numeralValues = {1, 5, 10, 50, 100, 500, 1000};
       Array.Reverse(numeralCharacters);
       Array.Reverse(numeralValues);
       int numberDivision;
       decimal numberRemainder;
       string romanNumeral = "";
       bool inMemory = false;
-      if ((numberToConvert > 0) && (numberToConvert < 101))
+      if ((numberToConvert > 0) && (numberToConvert < 1001))
       {
         int i = 0;
         foreach (var currentValue in numeralValues)
