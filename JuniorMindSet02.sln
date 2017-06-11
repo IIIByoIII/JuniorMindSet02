@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiFare", "TaxiFare\TaxiFa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watermelon", "Watermelon\Watermelon.csproj", "{833D5167-181F-4095-A765-2FED1A53A0FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmersLand", "FarmersLand\FarmersLand.csproj", "{CC292C06-2972-4CC1-BEF1-883FE1180EE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{833D5167-181F-4095-A765-2FED1A53A0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{833D5167-181F-4095-A765-2FED1A53A0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{833D5167-181F-4095-A765-2FED1A53A0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC292C06-2972-4CC1-BEF1-883FE1180EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC292C06-2972-4CC1-BEF1-883FE1180EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC292C06-2972-4CC1-BEF1-883FE1180EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC292C06-2972-4CC1-BEF1-883FE1180EE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
