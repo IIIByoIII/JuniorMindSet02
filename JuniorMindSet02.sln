@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debt", "Debt\Debt.csproj", "{58E58CE3-60CF-457E-945F-D3FCBD7E615C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals", "RomanNumerals\RomanNumerals.csproj", "{D6DD36A5-A02D-4D34-B44B-C11C023E950C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{58E58CE3-60CF-457E-945F-D3FCBD7E615C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58E58CE3-60CF-457E-945F-D3FCBD7E615C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58E58CE3-60CF-457E-945F-D3FCBD7E615C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6DD36A5-A02D-4D34-B44B-C11C023E950C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DD36A5-A02D-4D34-B44B-C11C023E950C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DD36A5-A02D-4D34-B44B-C11C023E950C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DD36A5-A02D-4D34-B44B-C11C023E950C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
