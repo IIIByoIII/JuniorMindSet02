@@ -12,6 +12,54 @@ namespace AdvancedRomanNumerals
       Assert.AreEqual("IV", ConvertToRomanNumerals(4));
     }
 
+    [TestMethod]
+    public void GetRomanNumeralEight()
+    {
+        Assert.AreEqual("VIII", ConvertToRomanNumerals(8));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralNine()
+    {
+        Assert.AreEqual("IX", ConvertToRomanNumerals(9));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralFifteen()
+    {
+        Assert.AreEqual("XV", ConvertToRomanNumerals(15));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralThirty()
+    {
+        Assert.AreEqual("XXX", ConvertToRomanNumerals(30));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralThirtyNine()
+    {
+        Assert.AreEqual("XXXIX", ConvertToRomanNumerals(39));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralFourtyOne()
+    {
+        Assert.AreEqual("XLI", ConvertToRomanNumerals(41));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralFourtyFive()
+    {
+        Assert.AreEqual("XLV", ConvertToRomanNumerals(45));
+    }
+
+    [TestMethod]
+    public void GetRomanNumeralNinetyNine()
+    {
+        Assert.AreEqual("XCIX", ConvertToRomanNumerals(99));
+    }
+
     string ConvertToRomanNumerals (int numberToConvert)
     {
       string[] numeralCharacters = {"I", "V", "X", "L", "C"};
