@@ -12,6 +12,12 @@ namespace Watermelon
       Assert.AreEqual("DA", WeightDivision(4));
     }
 
+    [TestMethod]
+    public void WeightIsOdd()
+    {
+        Assert.AreEqual("NU", WeightDivision(5));
+    }
+
     string WeightDivision (int watermelonMass)
     {
       string divideEqually;
