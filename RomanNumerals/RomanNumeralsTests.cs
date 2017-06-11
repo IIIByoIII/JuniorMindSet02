@@ -18,6 +18,12 @@ namespace RomanNumerals
         Assert.AreEqual("VIII", ConvertToRomanNumerals(8));
     }
 
+    [TestMethod]
+    public void GetRomanNumeralNine()
+    {
+        Assert.AreEqual("IX", ConvertToRomanNumerals(9));
+    }
+
     string ConvertToRomanNumerals (int numberToConvert)
     {
       string[] numeralCharacters = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
