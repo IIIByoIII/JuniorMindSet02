@@ -36,6 +36,12 @@ namespace RomanNumerals
         Assert.AreEqual("XXX", ConvertToRomanNumerals(30));
     }
 
+    [TestMethod]
+    public void GetRomanNumeralThirtyNine()
+    {
+        Assert.AreEqual("XXXIX", ConvertToRomanNumerals(39));
+    }
+
     string ConvertToRomanNumerals (int numberToConvert)
     {
       string[] numeralCharacters = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
