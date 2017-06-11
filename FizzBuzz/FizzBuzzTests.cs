@@ -24,6 +24,12 @@ namespace FizzBuzz
       Assert.AreEqual("FizzBuzz", ShowFizzBuzz(15));
     }
 
+    [TestMethod]
+    public void WillItNeither()
+    {
+      Assert.AreEqual("", ShowFizzBuzz(4));
+    }
+
     string ShowFizzBuzz (int inputNumber)
     {
       string variableFizzBuzz = "";
