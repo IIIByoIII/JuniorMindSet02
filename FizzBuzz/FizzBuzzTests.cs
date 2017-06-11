@@ -18,16 +18,26 @@ namespace FizzBuzz
       Assert.AreEqual("Buzz", ShowFizzBuzz(10));
     }
 
+    [TestMethod]
+    public void WillItFizzBuzz()
+    {
+      Assert.AreEqual("FizzBuzz", ShowFizzBuzz(15));
+    }
+
     string ShowFizzBuzz (int inputNumber)
     {
       string variableFizzBuzz = "";
       int remainderFizz = inputNumber % 3;
       int remainderBuzz = inputNumber % 5;
-      if (remainderFizz == 0)
+      if ((remainderFizz == 0) && (remainderBuzz == 0))
+      {
+        variableFizzBuzz = "FizzBuzz";
+      }
+      else if (remainderFizz == 0)
       {
         variableFizzBuzz = "Fizz";
       }
-      if (remainderBuzz == 0)
+      else if (remainderBuzz == 0)
       {
         variableFizzBuzz = "Buzz";
       }
