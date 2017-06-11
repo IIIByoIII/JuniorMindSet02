@@ -35,17 +35,13 @@ namespace FizzBuzz
       string variableFizzBuzz = "";
       int remainderFizz = inputNumber % 3;
       int remainderBuzz = inputNumber % 5;
-      if ((remainderFizz == 0) && (remainderBuzz == 0))
+      if (remainderFizz == 0)
       {
-        variableFizzBuzz = "FizzBuzz";
+        variableFizzBuzz += "Fizz";
       }
-      else if (remainderFizz == 0)
+      if (remainderBuzz == 0)
       {
-        variableFizzBuzz = "Fizz";
-      }
-      else if (remainderBuzz == 0)
-      {
-        variableFizzBuzz = "Buzz";
+        variableFizzBuzz += "Buzz";
       }
       return variableFizzBuzz;
     }
